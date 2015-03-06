@@ -46,21 +46,26 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.content {
+	padding: 0 0.938rem;
+	margin: 0 auto;
+	min-width: 37.5rem;
+}
 .html {
 	box-sizing: border-box;
 }
+/* Top Navigation */
 .top-navigation {
 	background-color: white;
 	position: fixed;
 	width: 100%;
 	z-index: 9999;	
 	border-bottom: 1px solid #DDD;
-	height: 70px;
 }
 .top-navigation .content {
-	width: 970px;
+	width: 809px;
+	height:  70px;
 	margin: 0 auto;
-	padding: 0 0.938rem;	
 }
 .top-navigation .Logo {
 	height: 70px;
@@ -71,7 +76,6 @@ table {
 	display: inline-block;
 	color: #838994;
 	font-size: 16px;
-	margin-top: 25px;
 	letter-spacing: 0.03em;
 }
 .top-navigation .links ul {
@@ -79,6 +83,7 @@ table {
 }
 .top-navigation .links li {
 	display: inline-block;
+	margin-top: 25px;
 	margin-left: 25px;
 }
 .top-navigation .links .active {
@@ -89,6 +94,7 @@ table {
 	cursor: pointer;
 	color: #838994;
 }
+/* Introduction */
 .introduction .content button {
 	float: right;
 	position: relative;
@@ -133,6 +139,7 @@ table {
 	background-size: cover;
 	overflow: auto;
 }
+/* Cases */
 .cases {
 	color: #fff;
 	overflow: hidden;
@@ -149,10 +156,12 @@ table {
 	display: inline-block
 	box-sizing: border-box;
 	height: 4em
+	padding: 0 auto;
 }
 .cases .devices li {
 	width: 33.3333333%;
 	float: left;
+	text-align: center;
 }
 .cases .content h2 {
 	font-size: 2.75rem;
@@ -172,4 +181,68 @@ table {
 .cases .devices p {
 	font-weight: 300;
 	font-size: 1.313rem
+}
+/* Social */
+.social {
+	background-color: #fff;
+	overflow: auto;
+	padding-bottom: 9.375rem;
+	text-align: center;
+}
+.social hr {
+	border: 0;
+	border-top: 1px solid #eaebec;
+	margin: 1.313rem 0;
+}
+.social .icons li {
+	border-radius: 1.25rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+	margin: 1.25rem 5px;
+	border: 1px solid #eaebec;
+	padding: 0 auto;
+	line-height: 2.5rem;
+	text-align: center;
+}
+.social .icons li:hover {
+	cursor: pointer;
+}
+.social .twitter {
+	color: #55acee;
+}
+.social .facebook {
+	color: #4c66a4;
+}
+.social .instagram {
+	color: #3f729b;
+}
+.social .copy {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #838994;
+}
+/* Responsive Design */
+@media (min-width: 48rem) {
+	.content {
+		width: 46rem;
+	}
+}
+@media (min-width: 62rem) {
+	.content {
+		width: 60rem;
+	}
+}
+@media (min-width: 75rem) {
+	.content {
+		width: 60%;
+	}
+}
+@-webkit-keyframes bounce {
+	0%, 100% {margin-top: 0px;}
+	50% {margin-top: 2rem;}
+}
+@keyframes bounce {
+	0%, 100% {margin-top: 0px;}
+	50% {margin-top: 2rem;}
 }
